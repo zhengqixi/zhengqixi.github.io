@@ -2,39 +2,40 @@
 // One day you'll get real drunk and be dared to put your SSN on here
 // DON'T DO IT!!!! IT STAYS ON GITHUB FOREVER AND EVER AND EVER UNTIL THE END OF TIME
 var format = "resume";
+var resumeData = data();
 function data() {
     // Can't be bothered to make a db just for this...
     // Literally need this stuff every once in a blue moon
     let data = 
     {
         // Header almost never changes. 
-    "header": {
+    header: {
         name: "Zhengqi Xi",
         tel: "(212) 617-4396",
         email: "zxi8@bloomberg.net"
         // NO SSN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         // ABSOLUTELY NOT!!!!!
     },
-    "education": {
-        "college": {
-            "institution": "Cooper Union for the Advancement of Science and Art",
-            "major": "Bachelor of Engineering, Mechanical Engineering",
-            "gpa": "3.52 (Cum Laude)",
-            "notableCourses": ["Computational Graphs for Machine Learning, Natural Language Processing, Computer Operating Systems"]
+    education: {
+        college: {
+            institution: "Cooper Union for the Advancement of Science and Art",
+            major: "Bachelor of Engineering, Mechanical Engineering",
+            gpa: "3.52 (Cum Laude)",
+            notableCourses: ["Computational Graphs for Machine Learning, Natural Language Processing, Computer Operating Systems"]
         }
     },
-    "work": [
+    work: [
         {
-            "duration": "2017-Present",
-            "title": "Software Engineer",
-            "company": "Bloomberg LP",
-            "responsibilities": []
+            duration: "2017-Present",
+            title: "Software Engineer",
+            company: "Bloomberg LP",
+            responsibilities: []
         },
         {
-            "duration": "Summer 2016",
-            "title": "Engineering Intern",
-            "company": "Energy Metrics",
-            "responsibilities": [
+            duration: "Summer 2016",
+            title: "Engineering Intern",
+            company: "Energy Metrics",
+            responsibilities: [
                 "Designed a Linux based micro-service that extends the capabilities of the Energy Metrics core software service, transforming a real time energy monitoring dashboard into a robust software that provides analysis and insight into building energy usage",
                 "Conducted energy simulations of building systems using EnergyPlus and OpenStudio",
                 "Utilized C# and Ruby to calibrate simulation models with hourly real time data such as occupancy and air conditioning setpoints, allowing for greater accuracy in simulating building energy usage",
@@ -43,10 +44,10 @@ function data() {
             ]
         },
         {
-            "duration": "Summer 2015",
-            "title": "Web Developer",
-            "company": "Etza Group",
-            "responsibilities": [
+            duration: "Summer 2015",
+            title: "Web Developer",
+            company: "Etza Group",
+            responsibilities: [
                 "Utilized web technologies such as PHP and JavaScript to create front and backend solutions for various websites",
                 "Implemented features such as user login and search using MySQL and PHP",
                 "Ensured smooth and continuous user experience using techniques such as lazy loading",
@@ -54,20 +55,20 @@ function data() {
             ]
         },
         {
-            "duration": "Summer 2015",
-            "title": "Teaching Assistant",
-            "company": "The Cooper Union Summer Stem Program",
-            "responsibilities": [
+            duration: "Summer 2015",
+            title: "Teaching Assistant",
+            company: "The Cooper Union Summer Stem Program",
+            responsibilities: [
                 "Instructed the designing and prototyping of Rube Goldberg machines using salvaged parts",
                 "Manufactured various components using machining equipment such as lathe, mills, and drills, as well as design software such as AutoCAD and SolidWorks",
                 "Facilitated implementation of efficient solutions to coordinate movement of various components in Rube Goldberg machine"
             ]
         },
         {
-            "duration": "2014-2017",
-            "title": "Student Manager",
-            "company": "Cooper Union Computer Center",
-            "responsibilities": [
+            duration: "2014-2017",
+            title: "Student Manager",
+            company: "Cooper Union Computer Center",
+            responsibilities: [
                 "Managed Computer Center student staff and acted as liason between student workers and full time staff",
                 "Maintained equipment and solved various IT related issues for students and faculty members",
                 "Upgraded old and outdated equipment and software to modern computing standards",
@@ -75,16 +76,16 @@ function data() {
             ]
         }
     ],
-    "schoolProjects": [
+    schoolProjects: [
         {
-            "duration": "Spring 2017",
-            "title": "Computational Graph for Machine Learning",
-            "responsibilities": []
+            duration: "Spring 2017",
+            title: "Computational Graph for Machine Learning",
+            responsibilities: []
         },
         {
-            "duration": "Fall 2017",
-            "title": "Autonomous Mobile Robots",
-            "responsibilities": [
+            duration: "Fall 2017",
+            title: "Autonomous Mobile Robots",
+            responsibilities: [
                 "Designed and manufactured a robot using various techniques such as laser cutting and 3D printing",
                 "Competed against other robots in various competitions such as robot soccer and robot sumo",
                 "Created algorithms to traverse field, as well as perform tasks such as object avoidance",
@@ -92,36 +93,36 @@ function data() {
             ]
         },
         {
-            "duration": "Spring 2016",
-            "title": "Natural Language Processing",
-            "responsibilities": [
+            duration: "Spring 2016",
+            title: "Natural Language Processing",
+            responsibilities: [
                 "Created model to classify various news snippets using a Naive Bayes approach",
                 "Implemented a model to solve SHSAT scrambled paragraphs using a mix of Naive Bayes and N-grams",
                 "Source for projects available at: https://github.com/zhengqixi/NLP"
             ]
         },
         {
-            "duration": "Spring 2014",
-            "title": "Design and Prototyping",
-            "responsibilities": [
+            duration: "Spring 2014",
+            title: "Design and Prototyping",
+            responsibilities: [
                 "Designed and prototyped an arcade machine by iterating through various prototypes and ideas via user feedback",
                 "Created various injection mold designs for manufacturing wax candles",
             ]
         },
         {
-            "duration": "Fall 2013",
-            "title": "GAIA, Sustainable Greenhouse for the Future",
-            "responsibilities": [
+            duration: "Fall 2013",
+            title: "GAIA, Sustainable Greenhouse for the Future",
+            responsibilities: [
                 "Assisted in designing a self sustained greenhouse positioned on NYC rofftops that gathers required resources from surroundings and is adaptable to a wide variety of environments",
                 "Designed external and internal water collection/distribution systems and internal hydroponics setups to facilitate healthy plant growth",
             ]
         }
         
     ],
-    "skills": [
+    skills: [
         {
-            "category": "Programming Languages (Relevant Frameworks and Libraries)",
-            "items": [
+            category: "Programming Languages (Relevant Frameworks and Libraries)",
+            items: [
                 "C/C++",
                 "C# (EntityFrameworks, WebAPI)",
                 "JavaScript/TypeScript (Angular, D3)",
@@ -133,16 +134,16 @@ function data() {
             ]
         },
         {
-            "category": "Software Tools and Suites",
-            "items": [
+            category: "Software Tools and Suites",
+            items: [
                 "SolidWorks",
                 "AutoCAD",
                 "Microsoft Office"
             ]
         },
         {
-            "category": "Miscellaneous",
-            "items": [
+            category: "Miscellaneous",
+            items: [
                 "Native Chinese Speaker",
                 "Long distance runner",
                 "Kenpo practitioner"
@@ -161,11 +162,18 @@ function resume() {
 }
 
 function generateHeader() {
-    let mainBody = d3.select("div.mainBody");
-    mainBody.append("section")
-        .class("introduction");
-    console.log(mainBody);
-
+    let section = d3.select("div.mainBody").append("section").attr("class", "introduction");
+    section.append("h4").text(resumeData.header.name)
+        .attr("class", "introduction")
+        .attr("id", "name");
+    section.append("h5")
+        .text(`Tel: ${resumeData.header.tel}`)
+        .attr("class", "introduction")
+        .attr("id", "tel");
+    section.append("h5")
+        .text(`Email: ${resumeData.header.email}`)
+        .attr("class", "introduction")
+        .attr("id", "email");
 }
 
 function toggleFormat() {
@@ -176,7 +184,6 @@ function toggleFormat() {
         format = "resume";
         resume();
     }
-    dumpToConsole();
 }
 
 function dumpToConsole() {
@@ -187,6 +194,7 @@ function dumpToConsole() {
 function initialLoad() {
     format = "resume"; 
     generateHeader();
+    dumpToConsole();
 }
 
 initialLoad();
