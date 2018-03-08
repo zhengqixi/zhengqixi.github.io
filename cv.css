@@ -1,5 +1,6 @@
 div.mainBody {
     width: 8.5in;
+    margin: 0.5in;
 }
 section {
    display: block; 
@@ -13,9 +14,6 @@ span#duration {
     float: right
 }
 
-span#company-role {
-    float: left;
-}
 div#item-header {
     margin: auto;
 }

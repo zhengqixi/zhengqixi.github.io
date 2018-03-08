@@ -236,7 +236,7 @@ function generateWork() {
         .text(function (d) {
             return d.duration;
         });
-    workData.append("ul")
+    workData.append("div").append("ul")
         .selectAll("li")
         .data(function (d) {
             return d.responsibilities;
@@ -272,7 +272,7 @@ function generateSchoolProjects() {
         .text(function(d) {
             return d.duration;
         });
-    projectsData.append("ul")
+    projectsData.append("div").append("ul")
         .selectAll("li")
         .data(function(d) {
             return d.responsibilities;
