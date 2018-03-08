@@ -3,6 +3,7 @@
 // DON'T DO IT!!!! IT STAYS ON GITHUB FOREVER AND EVER AND EVER UNTIL THE END OF TIME
 var format = "resume";
 var resumeData = data();
+var sectionHeader = "h3";
 function data() {
     // Can't be bothered to make a db just for this...
     // Literally need this stuff every once in a blue moon
@@ -20,7 +21,8 @@ function data() {
                 college: {
                     institution: "Cooper Union for the Advancement of Science and Art",
                     major: "Bachelor of Engineering, Mechanical Engineering",
-                    gpa: "3.52 (Cum Laude)",
+                    gpa: "3.52",
+                    honors: ["Graduated Cum Laude", "Full Tuition Scholarship"],
                     notableCourses: [
                         "Computational Graphs for Machine Learning",
                         "Natural Language Processing",
@@ -56,7 +58,8 @@ function data() {
                         "Implemented features such as user login and search using MySQL and PHP",
                         "Ensured smooth and continuous user experience using techniques such as lazy loading",
                         "Met with clients to design and propertly detail the deliverables and timetables of various projects"
-                    ]
+                    ],
+                    hideForResume: true
                 },
                 {
                     duration: "Summer 2015",
@@ -77,7 +80,8 @@ function data() {
                         "Maintained equipment and solved various IT related issues for students and faculty members",
                         "Upgraded old and outdated equipment and software to modern computing standards",
                         "Managed and distributed responsibilities to student staff"
-                    ]
+                    ],
+                    hideForResume: true
                 }
             ],
             schoolProjects: [
@@ -111,7 +115,8 @@ function data() {
                     responsibilities: [
                         "Designed and prototyped an arcade machine by iterating through various prototypes and ideas via user feedback",
                         "Created various injection mold designs for manufacturing wax candles",
-                    ]
+                    ],
+                    hideForResume: true
                 },
                 {
                     duration: "Fall 2013",
@@ -119,7 +124,8 @@ function data() {
                     responsibilities: [
                         "Assisted in designing a self sustained greenhouse positioned on NYC rofftops that gathers required resources from surroundings and is adaptable to a wide variety of environments",
                         "Designed external and internal water collection/distribution systems and internal hydroponics setups to facilitate healthy plant growth",
-                    ]
+                    ],
+                    hideForResume: true
                 }
 
             ],
@@ -159,48 +165,54 @@ function data() {
 }
 
 function cv() {
-
+    d3.selectAll(".hide-for-resume")
+        .attr("hidden", null);
 }
 
 function resume() {
+    d3.selectAll(".hide-for-resume")
+        .attr("hidden", true);
 }
 
 function generateHeader() {
     let section = d3.select("div.mainBody").append("section").attr("class", "introduction");
-    section.append("h4").text(resumeData.header.name)
+    section.append("h1").text(resumeData.header.name)
         .attr("id", "name");
-    section.append("h5")
+    section.append("h2")
         .text(`Tel: ${resumeData.header.tel}`)
         .attr("id", "tel");
-    section.append("h5")
+    section.append("h2")
         .text(`Email: ${resumeData.header.email}`)
         .attr("id", "email");
 }
 
 function generateEducation() {
     let section = d3.select("div.mainBody").append("section").attr("class", "education");
-    section.append("h4")
+    section.append(sectionHeader)
         .text("Education")
         .attr("id", "header");
     let college = section.append("div")
         .attr("id", "college");
-    college.append("h4")
+    college.append("div")
         .text(resumeData.education.college.institution)
         .attr("id", "institution");
-    college.append("h5")
+    college.append("div")
         .text(resumeData.education.college.major)
         .attr("id", "major");
-    college.append("h5")
+    college.append("div")
         .text(`GPA: ${resumeData.education.college.gpa}`)
         .attr("id", "gpa");
-    college.append("h5")
+    college.append("div")
+        .text(`Honors: ${resumeData.education.college.honors.join(", ")}`)
+        .attr("id", "honors");
+    college.append("div")
         .text(`Notable Courses: ${resumeData.education.college.notableCourses.join(", ")}`)
         .attr("id", "courses");
 }
 
 function generateWork() {
     let section = d3.select("div.mainBody").append("section").attr("class", "work");
-    section.append("h4")
+    section.append(sectionHeader)
         .text("Work Experience")
         .attr("id", "header");
     let workExperience = section.append("div")
@@ -232,7 +244,7 @@ function generateWork() {
 
 function generateSchoolProjects() {
     let section = d3.select("div.mainBody").append("section").attr("class", "school-projects");
-    section.append("h4")
+    section.append(sectionHeader)
         .text("Projects")
         .attr("id", "header")
     let projects = section.append("div")
@@ -264,8 +276,8 @@ function generateSchoolProjects() {
 
 function generateSkills() {
     let section = d3.select("div.mainBody").append("section").attr("class", "skills");
-    section.append("h4")
-        .text("General skills")
+    section.append(sectionHeader)
+        .text("Skills")
         .attr("id", "header");
     
     let skills = section.append("div")
