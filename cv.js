@@ -34,7 +34,12 @@ function data() {
                     duration: "2017-Present",
                     title: "Software Engineer",
                     company: "Bloomberg LP",
-                    responsibilities: ["Data center stuff"]
+                    responsibilities: [
+                        "Responsible for maintaining and creating Bloomberg data center management infrastructure",
+                        "Develop API endpoints to allow programmatic access of various data center asset information, such as location and connectivity of server machines",
+                        "Create UI screens to display data center information such as energy consumption and fuel reserves",
+                        "Create tools for improving continuous integration and deployment using Apache Kafka and Github"
+                    ]
                 },
                 {
                     duration: "Summer 2016",
@@ -87,7 +92,15 @@ function data() {
                 {
                     duration: "Spring 2017",
                     title: "Computational Graph for Machine Learning",
-                    responsibilities: []
+                    responsibilities: [
+                        "Train neural networks on a variety of classification tasks, such as MNIST",
+                        "Apply facial recognition technique from FaceNet to classification of brain wave(EEG) data",
+                        "Pre-process large quantities of brain wave data using Fourier Transforms",
+                        "Utilize Wasserstein GAN to generate MNIST style data from noise",
+                        "Source code for MNIST classifier available at: https://github.com/zhengqixi/cgml/tree/master/Assignment3",
+                        "Source code for MNIST generator available at: https://github.com/krisht/WassersteinGAN",
+                        "Source code and paper for EEG classifier available at: https://github.com/krisht/EEGEmbedding"
+                    ]
                 },
                 {
                     duration: "Fall 2017",
