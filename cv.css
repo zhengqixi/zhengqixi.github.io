@@ -1,0 +1,21 @@
+div.mainBody {
+    width: 8.5in;
+}
+section {
+   display: block; 
+   border-bottom: 2px solid black;
+}
+section.skills {
+    border-bottom: none;
+}
+
+span#duration {
+    float: right
+}
+
+span#company-role {
+    float: left;
+}
+div#item-header {
+    margin: auto;
+}

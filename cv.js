@@ -35,7 +35,7 @@ function data() {
                     duration: "2017-Present",
                     title: "Software Engineer",
                     company: "Bloomberg LP",
-                    responsibilities: []
+                    responsibilities: ["Data center stuff"]
                 },
                 {
                     duration: "Summer 2016",
@@ -178,10 +178,10 @@ function generateHeader() {
     let section = d3.select("div.mainBody").append("section").attr("class", "introduction");
     section.append("h1").text(resumeData.header.name)
         .attr("id", "name");
-    section.append("h2")
+    section.append("h3")
         .text(`Tel: ${resumeData.header.tel}`)
         .attr("id", "tel");
-    section.append("h2")
+    section.append("h3")
         .text(`Email: ${resumeData.header.email}`)
         .attr("id", "email");
 }
@@ -222,16 +222,20 @@ function generateWork() {
         .enter().append("div")
         .attr("id", "single-work")
         .attr("class", function(d) { return hideForResume(d); });
-    workData.append("span")
+    let itemHeader = workData.append("div")
+        .attr("id", "item-header");
+    itemHeader.append("span")
+        .attr("id", "company-role")
+        .append("strong")
         .text(function (d) {
             return `${d.company}, ${d.title}`;
-        })
-        .attr("id", "company-role");
-    workData.append("span")
+        });
+    itemHeader.append("span")
+        .attr("id", "duration")
+        .append("strong")
         .text(function (d) {
             return d.duration;
-        })
-        .attr("id", "duration");
+        });
     workData.append("ul")
         .selectAll("li")
         .data(function (d) {
@@ -254,16 +258,20 @@ function generateSchoolProjects() {
         .enter().append("div")
         .attr("id", "single-project")
         .attr("class", function(d) { return hideForResume(d); });
-    projectsData.append("span")
+    let projectHeader = projectsData.append("div")
+        .attr("id", "item-header");
+    projectHeader.append("span")
+        .attr("id", "project-name")
+        .append("strong")
         .text(function(d) {
             return d.title;
-        })
-        .attr("id", "project-name");
-    projectsData.append("span")
+        });
+    projectHeader.append("span")
+        .attr("id", "duration")
+        .append("strong")
         .text(function(d) {
             return d.duration;
-        })
-        .attr("id", "duration");
+        });
     projectsData.append("ul")
         .selectAll("li")
         .data(function(d) {
@@ -286,10 +294,11 @@ function generateSkills() {
         .data(resumeData.skills).enter().append("div")
         .attr("id", "skills");
     skills.append("span")
+        .attr("id", "category")
+        .append("strong")
         .text(function(d) {
             return `${d.category}: `;
-        })
-        .attr("id", "category");
+        });
     skills.append("span")
         .text(function(d) {
             return d.items.join(", ");
