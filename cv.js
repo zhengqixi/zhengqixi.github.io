@@ -46,7 +46,7 @@ function data() {
                     title: "Engineering Intern",
                     company: "Energy Metrics",
                     responsibilities: [
-                        "Designed a Linux based micro-service that extends the capabilities of the Energy Metrics core software service, transforming a real time energy monitoring dashboard into a robust software that provides analysis and insight into building energy usage",
+                        "Designed a Linux based micro-service that extends the capabilities of the Energy Metrics core software service, transforming a real time energy monitoring dashboard into robust software that provides analysis and insight into building energy usage",
                         "Conducted energy simulations of building systems using EnergyPlus and OpenStudio",
                         "Utilized C# and Ruby to calibrate simulation models with hourly real time data such as occupancy and air conditioning setpoints, allowing for greater accuracy in simulating building energy usage",
                         "Created workflow to analyze energy usage data from building simulations using Python with NumPy and SciPy",
@@ -71,7 +71,7 @@ function data() {
                     company: "The Cooper Union Summer Stem Program",
                     responsibilities: [
                         "Instructed the designing and prototyping of Rube Goldberg machines using salvaged parts",
-                        "Manufactured various components using machining equipment such as lathe, mills, and drills, as well as design software such as AutoCAD and SolidWorks",
+                        "Manufactured various components using machining equipment such as lathes, mills, and drills, as well as design software such as AutoCAD and SolidWorks",
                         "Facilitated implementation of efficient solutions to coordinate movement of various components in Rube Goldberg machine"
                     ]
                 },
@@ -346,6 +346,7 @@ function initialLoad() {
     generateWork();
     generateSchoolProjects();
     generateSkills();
+    resume();
 }
 
 initialLoad();
