@@ -21,7 +21,6 @@ function data() {
                 college: {
                     institution: "Cooper Union for the Advancement of Science and Art",
                     major: "Bachelor of Engineering, Mechanical Engineering",
-                    gpa: "3.52",
                     honors: ["Graduated Cum Laude", "Full Tuition Scholarship"],
                     notableCourses: [
                         "Computational Graphs for Machine Learning",
@@ -193,15 +192,12 @@ function generateEducation() {
         .attr("id", "header");
     let college = section.append("div")
         .attr("id", "college");
-    college.append("div")
+    college.append("div").append("strong")
         .text(resumeData.education.college.institution)
         .attr("id", "institution");
     college.append("div")
         .text(resumeData.education.college.major)
         .attr("id", "major");
-    college.append("div")
-        .text(`GPA: ${resumeData.education.college.gpa}`)
-        .attr("id", "gpa");
     college.append("div")
         .text(`Honors: ${resumeData.education.college.honors.join(", ")}`)
         .attr("id", "honors");
