@@ -93,13 +93,10 @@ function data() {
                     duration: "Spring 2017",
                     title: "Computational Graph for Machine Learning",
                     responsibilities: [
-                        "Train neural networks on a variety of classification tasks, such as MNIST",
-                        "Apply facial recognition technique from FaceNet to classification of brain wave(EEG) data",
-                        "Pre-process large quantities of brain wave data using Fourier Transforms",
+                        "Train neural networks to classify MNIST handwritten digit data",
                         "Utilize Wasserstein GAN to generate MNIST style data from noise",
-                        "Source code for MNIST classifier available at: https://github.com/zhengqixi/cgml/tree/master/Assignment3",
-                        "Source code for MNIST generator available at: https://github.com/krisht/WassersteinGAN",
-                        "Source code and paper for EEG classifier available at: https://github.com/krisht/EEGEmbedding"
+                        "Apply facial recognition technique (Triplet Cluster mining from from FaceNet) to classification of brain wave (EEG) data"
+                      
                     ]
                 },
                 {
@@ -117,8 +114,7 @@ function data() {
                     title: "Natural Language Processing",
                     responsibilities: [
                         "Created model to classify various news snippets using a Naive Bayes approach",
-                        "Implemented a model to solve SHSAT scrambled paragraphs using a mix of Naive Bayes and N-grams",
-                        "Source for projects available at: https://github.com/zhengqixi/NLP"
+                        "Implemented a model to solve SHSAT scrambled paragraphs using a mix of Naive Bayes and N-grams"
                     ]
                 },
                 {
