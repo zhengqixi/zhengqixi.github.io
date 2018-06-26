@@ -61,7 +61,7 @@ function data() {
                         "Utilized web technologies such as PHP and JavaScript to create front and backend solutions for various websites",
                         "Implemented features such as user login and search using MySQL and PHP",
                         "Ensured smooth and continuous user experience using techniques such as lazy loading",
-                        "Met with clients to design and propertly detail the deliverables and timetables of various projects"
+                        "Met with clients to design and properly detail the deliverables and timetables of various projects"
                     ],
                     hideForResume: true
                 },
@@ -80,7 +80,7 @@ function data() {
                     title: "Student Manager",
                     company: "Cooper Union Computer Center",
                     responsibilities: [
-                        "Managed Computer Center student staff and acted as liason between student workers and full time staff",
+                        "Managed Computer Center student staff and acted as liaison between student workers and full time staff",
                         "Maintained equipment and solved various IT related issues for students and faculty members",
                         "Upgraded old and outdated equipment and software to modern computing standards",
                         "Managed and distributed responsibilities to student staff"
@@ -93,9 +93,9 @@ function data() {
                     duration: "Spring 2017",
                     title: "Computational Graph for Machine Learning",
                     responsibilities: [
-                        "Train neural networks to classify MNIST handwritten digit data",
-                        "Utilize Wasserstein GAN to generate MNIST style data from noise",
-                        "Apply facial recognition technique (Triplet Cluster mining from from FaceNet) to classification of brain wave (EEG) data"
+                        "Train neural networks to distinguish handwritten digits",
+                        "Utilize Wasserstein GAN Architecture neural networks to generate handwritten digits from arbitrary noise",
+                        "Apply a facial recognition technique to to time series data to classify brain waves readings"
                       
                     ]
                 },
@@ -106,7 +106,7 @@ function data() {
                         "Designed and manufactured a robot using various techniques such as laser cutting and 3D printing",
                         "Competed against other robots in various competitions such as robot soccer and robot sumo",
                         "Created algorithms to traverse field, as well as perform tasks such as object avoidance",
-                        "Programmed microcontrollers such as Arduinos and PIC using C and Assembly"
+                        "Programmed micro-controllers such as Arduino and PIC using C and Assembly"
                     ]
                 },
                 {
@@ -121,7 +121,7 @@ function data() {
                     duration: "Spring 2014",
                     title: "Design and Prototyping",
                     responsibilities: [
-                        "Designed and prototyped an arcade machine by iterating through various prototypes and ideas via user feedback",
+                        "Designed and prototype an arcade machine by iterating through various prototypes and ideas via user feedback",
                         "Created various injection mold designs for manufacturing wax candles",
                     ],
                     hideForResume: true
@@ -336,7 +336,7 @@ function dumpToConsole() {
 }
 
 function initialLoad() {
-    format = "resume";
+    format = "cv";
     generateHeader();
     generateEducation();
     generateWork();
