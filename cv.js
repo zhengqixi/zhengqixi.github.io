@@ -1,7 +1,7 @@
 // NOTE from current self to future self: 
 // One day you'll get real drunk and be dared to put your SSN on here
 // DON'T DO IT!!!! IT STAYS ON GITHUB FOREVER AND EVER AND EVER UNTIL THE END OF TIME
-var format = "resume";
+var format = "cv";
 var resumeData = data();
 var sectionHeader = "h3";
 function data() {
