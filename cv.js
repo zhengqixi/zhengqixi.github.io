@@ -23,7 +23,7 @@ function data() {
                     major: "Bachelor of Engineering, Mechanical Engineering",
                     honors: ["Graduated Cum Laude", "Full Tuition Scholarship"],
                     notableCourses: [
-                        "Computational Graphs for Machine Learning",
+                        "Computational Graph Models for Machine Learning",
                         "Natural Language Processing",
                         "Computer Operating Systems"
                     ]
@@ -36,9 +36,11 @@ function data() {
                     company: "Bloomberg LP",
                     responsibilities: [
                         "Responsible for maintaining and creating Bloomberg data center management infrastructure",
-                        "Develop API endpoints to allow programmatic access of various data center asset information, such as location and connectivity of server machines",
-                        "Create UI screens to display data center information such as energy consumption and fuel reserves",
-                        "Create tools for improving continuous integration and deployment using Apache Kafka and Github"
+                        "Develop API endpoints using .NET Framework to allow programmatic access of various data center asset information, such as location and connectivity of server machines",
+                        "Create complex relational database functionality using SQL transactions",
+                        "Create UI screens to display data center information such as energy consumption and fuel reserves using Angular Framework",
+                        "Create tools for improving continuous integration and deployment using Apache Kafka and Github",
+                        "Develop and maintain Golang libraries at Bloomberg for use companywide to create microservices"
                     ]
                 },
                 {
@@ -91,12 +93,11 @@ function data() {
             schoolProjects: [
                 {
                     duration: "Spring 2017",
-                    title: "Computational Graph for Machine Learning",
+                    title: "Computational Graph Models for Machine Learning",
                     responsibilities: [
                         "Train neural networks to distinguish handwritten digits",
                         "Utilize Wasserstein GAN Architecture neural networks to generate handwritten digits from arbitrary noise",
                         "Apply a facial recognition technique to to time series data to classify brain waves readings"
-                      
                     ]
                 },
                 {
@@ -106,7 +107,8 @@ function data() {
                         "Designed and manufactured a robot using various techniques such as laser cutting and 3D printing",
                         "Competed against other robots in various competitions such as robot soccer and robot sumo",
                         "Created algorithms to traverse field, as well as perform tasks such as object avoidance",
-                        "Programmed micro-controllers such as Arduino and PIC using C and Assembly"
+                        "Programmed micro-controllers such as Arduino and PIC using C and Assembly",
+                        "Utilized master-slave Arduino configuration for processing sensor input while calculating movement in parallel"
                     ]
                 },
                 {
@@ -146,7 +148,7 @@ function data() {
                         "JavaScript/TypeScript (Angular, D3)",
                         "Python (Flask, NumPy, SciPy, Tensorflow)",
                         "Matlab",
-                        "SQL/SQLLite",
+                        "SQL/SQLite",
                         "PHP",
                         "HTML/CSS"
                     ]
@@ -162,7 +164,7 @@ function data() {
                 {
                     category: "Miscellaneous",
                     items: [
-                        "Native Chinese Speaker",
+                        "Strong Chinese skills",
                         "Long distance runner",
                         "Kenpo practitioner"
                     ]
