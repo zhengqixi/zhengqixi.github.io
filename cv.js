@@ -342,7 +342,7 @@ function initialLoad() {
     generateWork();
     generateSchoolProjects();
     generateSkills();
-    resume();
+    cv();
 }
 
 initialLoad();
