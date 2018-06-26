@@ -40,7 +40,7 @@ function data() {
                         "Create complex relational database functionality using SQL transactions",
                         "Create UI screens to display data center information such as energy consumption and fuel reserves using Angular Framework",
                         "Create tools for improving continuous integration and deployment using Apache Kafka and Github",
-                        "Develop and maintain Golang libraries at Bloomberg for use companywide to create microservices"
+                        "Develop and maintain Golang libraries for use companywide to create microservices"
                     ]
                 },
                 {
