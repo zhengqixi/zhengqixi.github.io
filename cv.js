@@ -21,7 +21,7 @@ function data() {
                 college: {
                     institution: "Cooper Union for the Advancement of Science and Art",
                     major: "Bachelor of Engineering, Mechanical Engineering",
-                    honors: ["Graduated Cum Laude", "Full Tuition Scholarship"]
+                    honors: ["Graduated Cum Laude (Placeholder GPA for now)", "Full Tuition Scholarship"]
                     /*
                     I suppose...who cares at this point
                     notableCourses: [
@@ -38,12 +38,12 @@ function data() {
                     title: "Software Engineer",
                     company: "Bloomberg LP",
                     responsibilities: [
-                        "Responsible for maintaining and creating Bloomberg data center management infrastructure",
+                        "Maintain and create Bloomberg data center management infrastructure",
                         "Develop API endpoints using .NET Framework to allow programmatic access of various data center asset information, such as location and connectivity of server machines",
                         "Create relational database functionality to maintain tree-like relations between datacenter assets using SQL transactions and graph algorithms",
-                        "Create UI screens to display data center information and enable workflows", 
+                        "Design UI screens to display data center information and enable workflows", 
                         "Implement data visualization for energy consumption and fuel reserves within datacenters using Angular Framework and D3 library",
-                        "Improving continuous integration and deployment for Bloomberg Trading Systems using Apache Kafka and Github Web hooks",
+                        "Improve continuous integration and deployment for Bloomberg Trading Systems using Apache Kafka and Github Web hooks",
                         "Develop and maintain Golang libraries for use companywide to create microservices"
                     ]
                 },
@@ -64,7 +64,7 @@ function data() {
                     title: "Web Developer",
                     company: "Etza Group",
                     responsibilities: [
-                        "Utilized PHP and JavaScript to create front and backend solutions for various websites",
+                        "Utilized PHP and JavaScript to create frontend and backend solutions for various websites",
                         "Implemented features such as user login and search using MySQL and PHP",
                         "Ensured smooth and continuous user experience using techniques such as lazy loading",
                         "Met with clients to design and properly detail the deliverables and timetables of various projects"
