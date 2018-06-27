@@ -216,9 +216,11 @@ function generateEducation() {
     college.append("div")
         .text(`Honors: ${resumeData.education.college.honors.join(", ")}`)
         .attr("id", "honors");
+        /*
     college.append("div")
         .text(`Notable Courses: ${resumeData.education.college.notableCourses.join(", ")}`)
         .attr("id", "courses");
+        */
 }
 
 function generateWork() {
