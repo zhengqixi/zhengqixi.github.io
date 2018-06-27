@@ -21,12 +21,15 @@ function data() {
                 college: {
                     institution: "Cooper Union for the Advancement of Science and Art",
                     major: "Bachelor of Engineering, Mechanical Engineering",
-                    honors: ["Graduated Cum Laude", "Full Tuition Scholarship"],
+                    honors: ["Graduated Cum Laude", "Full Tuition Scholarship"]
+                    /*
+                    I suppose...who cares at this point
                     notableCourses: [
                         "Computational Graph Models for Machine Learning",
                         "Natural Language Processing",
                         "Computer Operating Systems"
                     ]
+                    */
                 }
             },
             work: [
@@ -37,9 +40,10 @@ function data() {
                     responsibilities: [
                         "Responsible for maintaining and creating Bloomberg data center management infrastructure",
                         "Develop API endpoints using .NET Framework to allow programmatic access of various data center asset information, such as location and connectivity of server machines",
-                        "Create complex relational database functionality using SQL transactions",
-                        "Create UI screens to display data center information such as energy consumption and fuel reserves using Angular Framework",
-                        "Create tools for improving continuous integration and deployment using Apache Kafka and Github",
+                        "Create relational database functionality to maintain tree-like relations between datacenter assets using SQL transactions and graph algorithms",
+                        "Create UI screens to display data center information and enable workflows", 
+                        "Implement data visualization for energy consumption and fuel reserves within datacenters using Angular Framework and D3 library",
+                        "Improving continuous integration and deployment for Bloomberg Trading Systems using Apache Kafka and Github Web hooks",
                         "Develop and maintain Golang libraries for use companywide to create microservices"
                     ]
                 },
@@ -60,7 +64,7 @@ function data() {
                     title: "Web Developer",
                     company: "Etza Group",
                     responsibilities: [
-                        "Utilized web technologies such as PHP and JavaScript to create front and backend solutions for various websites",
+                        "Utilized PHP and JavaScript to create front and backend solutions for various websites",
                         "Implemented features such as user login and search using MySQL and PHP",
                         "Ensured smooth and continuous user experience using techniques such as lazy loading",
                         "Met with clients to design and properly detail the deliverables and timetables of various projects"
@@ -95,9 +99,9 @@ function data() {
                     duration: "Spring 2017",
                     title: "Computational Graph Models for Machine Learning",
                     responsibilities: [
-                        "Train neural networks to distinguish handwritten digits",
+                        "Trained various neural networks for different tasks, such as distinguishing handwritten digits",
                         "Utilize Wasserstein GAN Architecture neural networks to generate handwritten digits from arbitrary noise",
-                        "Apply a facial recognition technique to to time series data to classify brain waves readings"
+                        "Apply a facial recognition technique to to time series data to classify brain waves readings, achieving 80% classification accuracy on unseen data"
                     ]
                 },
                 {
@@ -115,7 +119,7 @@ function data() {
                     duration: "Spring 2016",
                     title: "Natural Language Processing",
                     responsibilities: [
-                        "Created model to classify various news snippets using a Naive Bayes approach",
+                        "Created model to classify various news snippets using a Naive Bayes approach, with 92% accuracy",
                         "Implemented a model to solve SHSAT scrambled paragraphs using a mix of Naive Bayes and N-grams"
                     ]
                 },
@@ -164,7 +168,7 @@ function data() {
                 {
                     category: "Miscellaneous",
                     items: [
-                        "Strong Chinese skills",
+                        "Fluent in Mandarin and Shanghainese",
                         "Long distance runner",
                         "Kenpo practitioner"
                     ]
