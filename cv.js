@@ -21,7 +21,7 @@ function data() {
                 college: {
                     institution: "Cooper Union for the Advancement of Science and Art",
                     major: "Bachelor of Engineering, Mechanical Engineering",
-                    honors: ["Graduated Cum Laude (Placeholder GPA for now)", "Full Tuition Scholarship"]
+                    honors: ["Graduated Cum Laude (3.52)", "Full Tuition Scholarship"]
                     /*
                     I suppose...who cares at this point
                     notableCourses: [
