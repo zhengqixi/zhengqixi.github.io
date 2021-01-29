@@ -12,8 +12,8 @@ function data() {
             // Header almost never changes. 
             header: {
                 name: "Zhengqi Xi",
-                tel: "(212) 617-4396",
-                email: "zxi8@bloomberg.net"
+                tel: "Lets keep this a secret",
+                email: "Lets keep this one a secret too"
                 // NO SSN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 // ABSOLUTELY NOT!!!!!
             },
