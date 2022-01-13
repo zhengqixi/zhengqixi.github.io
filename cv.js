@@ -1,13 +1,13 @@
 // NOTE from current self to future self: 
 // One day you'll get real drunk and be dared to put your SSN on here
 // DON'T DO IT!!!! IT STAYS ON GITHUB FOREVER AND EVER AND EVER UNTIL THE END OF TIME
-var format = "cv";
-var resumeData = data();
-var sectionHeader = "h3";
+let format = "cv";
+let resumeData = data();
+let sectionHeader = "h3";
 function data() {
     // Can't be bothered to make a db just for this...
     // Literally need this stuff every once in a blue moon
-    let data =
+    const data =
         {
             // Header almost never changes. 
             header: {
@@ -22,14 +22,6 @@ function data() {
                     institution: "Cooper Union for the Advancement of Science and Art",
                     major: "Bachelor of Engineering, Mechanical Engineering",
                     honors: ["Graduated Cum Laude (3.52)", "Full Tuition Scholarship"]
-                    /*
-                    I suppose...who cares at this point
-                    notableCourses: [
-                        "Computational Graph Models for Machine Learning",
-                        "Natural Language Processing",
-                        "Computer Operating Systems"
-                    ]
-                    */
                 }
             },
             work: [
@@ -57,7 +49,8 @@ function data() {
                         "Utilized C# and Ruby to calibrate simulation models with hourly real time data such as occupancy and air conditioning setpoints, allowing for greater accuracy in simulating building energy usage",
                         "Created workflow to analyze energy usage data from building simulations using Python with NumPy and SciPy",
                         "Performed fieldwork installing smart thermostats in various buildings to monitor and control air conditioning usage"
-                    ]
+                    ],
+                    hideForResume: true
                 },
                 {
                     duration: "Summer 2015",
@@ -216,11 +209,6 @@ function generateEducation() {
     college.append("div")
         .text(`Honors: ${resumeData.education.college.honors.join(", ")}`)
         .attr("id", "honors");
-        /*
-    college.append("div")
-        .text(`Notable Courses: ${resumeData.education.college.notableCourses.join(", ")}`)
-        .attr("id", "courses");
-        */
 }
 
 function generateWork() {
@@ -260,7 +248,8 @@ function generateWork() {
 }
 
 function generateSchoolProjects() {
-    let section = d3.select("div.mainBody").append("section").attr("class", "school-projects");
+    let section = d3.select("div.mainBody")
+        .append("section").attr("class", "school-projects hide-for-resume");
     section.append(sectionHeader)
         .text("Projects")
         .attr("id", "header")
