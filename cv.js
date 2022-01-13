@@ -2,8 +2,8 @@
 // One day you'll get real drunk and be dared to put your SSN on here
 // DON'T DO IT!!!! IT STAYS ON GITHUB FOREVER AND EVER AND EVER UNTIL THE END OF TIME
 let format = "cv";
-let resumeData = data();
-let sectionHeader = "h3";
+const resumeData = data();
+const sectionHeader = "h3";
 function data() {
     // Can't be bothered to make a db just for this...
     // Literally need this stuff every once in a blue moon
@@ -30,13 +30,21 @@ function data() {
                     title: "Software Engineer",
                     company: "Bloomberg LP",
                     responsibilities: [
-                        "Maintain and create Bloomberg data center management infrastructure",
+                        "Maintain and create Bloomberg data center management software",
                         "Develop API endpoints using .NET Framework to allow programmatic access of various data center asset information, such as location and connectivity of server machines",
+                        "Led large scale refactor of .NET application to follow command/query design patterns",
                         "Create relational database functionality to maintain tree-like relations between datacenter assets using SQL transactions and graph algorithms",
-                        "Design UI screens to display data center information and enable workflows", 
-                        "Implement data visualization for energy consumption and fuel reserves within datacenters using Angular Framework and D3 library",
-                        "Improve continuous integration and deployment for Bloomberg Trading Systems using Apache Kafka and Github Web hooks",
-                        "Develop and maintain Golang libraries for use companywide to create microservices"
+                        "Develop and maintain Golang libraries for use companywide to create microservices",
+                        "Develop UIs for datacenter management using Typescript and Angular",
+                        "Design and create UI for large scale compute resource management with React",
+                        "Create API endpoints for automated compute resource allocation",
+                        "Utilize Apache Airflow to orchestrate compute resource provisioning stages",
+                        "Design and implement Go microservices for use in compute resource provisioning",
+                        "Utilize Apache Kafka for asyncronous communcation between microservices and compute provisioning infrastructure",
+                        "Create GraphQL endpoints for fleetwide compute management",
+                        "Utilize Typescript to efficiently create generic, reusable components to reduce code bloat",
+                        "Championed and standardized Go microservice patterns, such as error handling and propagation, for the team",
+                        "Create and structure project plans for long term feature implementation"
                     ]
                 },
                 {
@@ -62,7 +70,7 @@ function data() {
                         "Ensured smooth and continuous user experience using techniques such as lazy loading",
                         "Met with clients to design and properly detail the deliverables and timetables of various projects"
                     ],
-                    hideForResume: true
+                    hideForResume: false 
                 },
                 {
                     duration: "Summer 2015",
@@ -72,7 +80,8 @@ function data() {
                         "Instructed the designing and prototyping of Rube Goldberg machines using salvaged parts",
                         "Manufactured various components using machining equipment such as lathes, mills, and drills, as well as design software such as AutoCAD and SolidWorks",
                         "Facilitated implementation of efficient solutions to coordinate movement of various components in Rube Goldberg machine"
-                    ]
+                    ],
+                    hideForResume: true
                 },
                 {
                     duration: "2014-2017",
@@ -140,16 +149,18 @@ function data() {
                 {
                     category: "Programming Languages (Relevant Frameworks and Libraries)",
                     items: [
-                        "C/C++",
+                        "Golang",
+                        "JavaScript/TypeScript (React, Angular, D3)",
+                        "HTML/CSS",
+                        "Python",
                         "C# (EntityFrameworks, WebAPI)",
-                        "JavaScript/TypeScript (Angular, D3)",
-                        "Python (Flask, NumPy, SciPy, Tensorflow)",
+                        "C/C++",
                         "Matlab",
                         "SQL/SQLite",
                         "PHP",
-                        "HTML/CSS"
                     ]
                 },
+                /*
                 {
                     category: "Software Tools and Suites",
                     items: [
@@ -158,10 +169,12 @@ function data() {
                         "Microsoft Office"
                     ]
                 },
+                */
                 {
                     category: "Miscellaneous",
                     items: [
-                        "Fluent in Mandarin and Shanghainese",
+                        "Conversatational in Chinese(Mandarin and Shanghainese)",
+                        "Conversatational in Japanese",
                         "Long distance runner",
                         "Kenpo practitioner"
                     ]
@@ -249,7 +262,7 @@ function generateWork() {
 
 function generateSchoolProjects() {
     let section = d3.select("div.mainBody")
-        .append("section").attr("class", "school-projects hide-for-resume");
+        .append("section").attr("class", "school-projects");
     section.append(sectionHeader)
         .text("Projects")
         .attr("id", "header")
@@ -337,7 +350,7 @@ function initialLoad() {
     generateHeader();
     generateEducation();
     generateWork();
-    generateSchoolProjects();
+    //generateSchoolProjects();
     generateSkills();
     cv();
 }
