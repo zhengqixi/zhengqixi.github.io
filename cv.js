@@ -12,8 +12,8 @@ function data() {
             // Header almost never changes. 
             header: {
                 name: "Zhengqi Xi",
-                tel: "Lets keep this a secret",
-                email: "Lets keep this one a secret too"
+                tel: "(917) 434-7083",
+                email: "zhengqixi@gmail.com"
                 // NO SSN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 // ABSOLUTELY NOT!!!!!
             },
@@ -150,9 +150,9 @@ function data() {
                     category: "Programming Languages (Relevant Frameworks and Libraries)",
                     items: [
                         "Golang",
-                        "JavaScript/TypeScript (React, Angular, D3)",
-                        "HTML/CSS",
+                        "TypeScript/JavaScript/TypeScript (React, Angular, D3)",
                         "Python",
+                        "HTML/CSS",
                         "C# (EntityFrameworks, WebAPI)",
                         "C/C++",
                         "Matlab",
