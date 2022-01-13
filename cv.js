@@ -69,7 +69,7 @@ function data() {
                         "Ensured smooth and continuous user experience using techniques such as lazy loading",
                         "Met with clients to design and properly detail the deliverables and timetables of various projects"
                     ],
-                    hideForResume: false
+                    hideForResume: true
                 },
                 {
                     duration: "Summer 2015",
