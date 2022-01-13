@@ -58,7 +58,6 @@ function data() {
                         "Created workflow to analyze energy usage data from building simulations using Python with NumPy and SciPy",
                         "Performed fieldwork installing smart thermostats in various buildings to monitor and control air conditioning usage"
                     ],
-                    hideForResume: true
                 },
                 {
                     duration: "Summer 2015",
@@ -70,7 +69,7 @@ function data() {
                         "Ensured smooth and continuous user experience using techniques such as lazy loading",
                         "Met with clients to design and properly detail the deliverables and timetables of various projects"
                     ],
-                    hideForResume: true 
+                    hideForResume: false
                 },
                 {
                     duration: "Summer 2015",
@@ -93,7 +92,7 @@ function data() {
                         "Upgraded old and outdated equipment and software to modern computing standards",
                         "Managed and distributed responsibilities to student staff"
                     ],
-                    hideForResume: true
+                    hideForResume: false 
                 }
             ],
             schoolProjects: [
