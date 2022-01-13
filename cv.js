@@ -172,8 +172,8 @@ function data() {
                 {
                     category: "Miscellaneous",
                     items: [
-                        "Conversatational in Chinese(Mandarin and Shanghainese)",
-                        "Conversatational in Japanese",
+                        "Conversational in Chinese(Mandarin and Shanghainese)",
+                        "Conversational in Japanese",
                         "Long distance runner",
                         "Kenpo practitioner"
                     ]
