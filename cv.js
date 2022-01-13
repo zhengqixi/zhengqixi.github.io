@@ -92,7 +92,6 @@ function data() {
                         "Upgraded old and outdated equipment and software to modern computing standards",
                         "Managed and distributed responsibilities to student staff"
                     ],
-                    hideForResume: false 
                 }
             ],
             schoolProjects: [
