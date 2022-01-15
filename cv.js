@@ -44,6 +44,7 @@ function data() {
                         "Create GraphQL endpoints for fleetwide compute management",
                         "Utilize Typescript to efficiently create generic, reusable components to reduce code bloat",
                         "Championed and standardized Go microservice patterns, such as error handling and propagation, for the team",
+                        "Gather requirements from internal stakeholders to produce product designs",
                         "Create and structure project plans for long term feature implementation"
                     ]
                 },
