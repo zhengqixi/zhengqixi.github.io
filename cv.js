@@ -26,7 +26,20 @@ function data() {
             },
             work: [
                 {
-                    duration: "2017-Present",
+                    duration: "2022-Present",
+                    title: "Software Engineer",
+                    company: "Google LLC",
+                    responsibilities: [
+                        "Develop workflows to automate network tech refresh",
+                        "Design safety mechanisms to ensure multiple workflows can safely operate concurrently within a datacenter",
+                        "Create tooling to implement network model changes in C++",
+                        "Utilize Go and C++ to create automation for safe and scaleable replacement of Google's SDN servers",
+                        "Maintain algorithms for port allocation for Google network disaster recovery tooling",
+                        "Mock Interviewer for Tech Exchange, a CS outreach program for HBCU students"
+                    ]
+                },
+                {
+                    duration: "2017-2022",
                     title: "Software Engineer",
                     company: "Bloomberg LP",
                     responsibilities: [
