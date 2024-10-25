@@ -237,13 +237,13 @@ function generateEducation() {
         .text(`Honors: ${resumeData.education.college.honors.join(", ")}`)
         .attr("id", "honors");
     
-    let master = section.append("div")
-        .attr("id", "master");
-    master.append("div").append("strong")
-        .text(resumeData.education.master.institution)
+    let masters = section.append("div")
+        .attr("id", "masters");
+    masters.append("div").append("strong")
+        .text(resumeData.education.masters.institution)
         .attr("id", "institution");
-    master.append("div")
-        .text(resumeData.education.master.major)
+    masters.append("div")
+        .text(resumeData.education.masters.major)
         .attr("id", "major");
 }
 
