@@ -12,7 +12,6 @@ function data() {
             // Header almost never changes. 
             header: {
                 name: "Zhengqi Xi",
-                tel: "(917) 434-7083",
                 email: "zhengqixi@gmail.com"
                 // NO SSN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 // ABSOLUTELY NOT!!!!!
@@ -22,6 +21,10 @@ function data() {
                     institution: "Cooper Union for the Advancement of Science and Art",
                     major: "Bachelor of Engineering, Mechanical Engineering",
                     honors: ["Graduated Cum Laude (3.52)", "Full Tuition Scholarship"]
+                },
+                masters: {
+                    institution: "New York University",
+                    major: "Masters of Science, Computer Science",
                 }
             },
             work: [
@@ -72,6 +75,7 @@ function data() {
                         "Created workflow to analyze energy usage data from building simulations using Python with NumPy and SciPy",
                         "Performed fieldwork installing smart thermostats in various buildings to monitor and control air conditioning usage"
                     ],
+                    hideForResume: true
                 },
                 {
                     duration: "Summer 2015",
@@ -212,9 +216,6 @@ function generateHeader() {
     section.append("h1").text(resumeData.header.name)
         .attr("id", "name");
     section.append("h3")
-        .text(`Tel: ${resumeData.header.tel}`)
-        .attr("id", "tel");
-    section.append("h3")
         .text(`Email: ${resumeData.header.email}`)
         .attr("id", "email");
 }
@@ -235,6 +236,15 @@ function generateEducation() {
     college.append("div")
         .text(`Honors: ${resumeData.education.college.honors.join(", ")}`)
         .attr("id", "honors");
+    
+    let master = section.append("div")
+        .attr("id", "master");
+    master.append("div").append("strong")
+        .text(resumeData.education.master.institution)
+        .attr("id", "institution");
+    master.append("div")
+        .text(resumeData.education.master.major)
+        .attr("id", "major");
 }
 
 function generateWork() {
