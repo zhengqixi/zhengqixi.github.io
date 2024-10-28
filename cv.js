@@ -33,7 +33,7 @@ function data() {
                     title: "Software Engineer",
                     company: "Google LLC",
                     responsibilities: [
-                        "Develop workflows to automate network tech refresh",
+                        "Develop workflows to automate replacement of Google datacenter networking devices",
                         "Design safety mechanisms to ensure multiple workflows can safely operate concurrently within a datacenter",
                         "Create tooling to implement network model changes in C++",
                         "Utilize Go and C++ to create automation for safe and scaleable replacement of Google's SDN servers",
